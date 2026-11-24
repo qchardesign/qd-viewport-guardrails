@@ -1,0 +1,45 @@
+{
+  "name": "qd-viewport-guardrails",
+  "version": "1.0.0",
+  "description": "Playwright multi-viewport layout guardrails: 360px-1440px zero-overflow, inner-container bounding-box, pill/button clipping, and header edge-flush alignment assertions.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/guardrails.test.js"
+  },
+  "keywords": [
+    "playwright",
+    "viewport",
+    "responsive",
+    "layout-testing",
+    "overflow",
+    "a11y",
+    "ui-guardrails"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "peerDependencies": {
+    "playwright": ">=1.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "playwright": "^1.50.0",
+    "typescript": "^5.7.0"
+  }
+}
